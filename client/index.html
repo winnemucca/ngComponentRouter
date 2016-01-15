@@ -11,7 +11,6 @@
     <div class="container-fluid">
       <div class="row">
         <app></app>
-        <div ng-outlet="home"> </div>
       </div>
     </div>
 
@@ -20,17 +19,24 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.2/angular.js"></script>
-     <!-- <script type="text/javascript" src="/steveComponent/node_modules/@angular/router/angular1/angular_1_router.js"></script> -->
     <script src="app/Scripts/angular_1_router.js"></script>
 
     <!-- modules -->
     <script src="app/app.module.js"></script>
-    <script src="app/features/home/home.module.js"></script>
-
     <script src="app/features/features.module.js"></script>
+    <script src="app/features/appDirective/appDirective.module.js"></script>
+    <script src="app/components/components.module.js"></script>
+    <script src="app/components/home/home.module.js"></script>
+    <script src="app/components/notFound/notFound.module.js"></script>
 
-    <!-- routing and controllers -->
-    <script src="app/features/home/home.controller.js"></script>
-    <script src="app/features/home/home.route.js"></script>
+
+    <!-- directives -->
+    <script src="app/features/appDirective/appDirective.directive.js"></script>
+    <!-- components -->
+    <script src="app/components/home/home.js"></script>
+    <script src="app/components/notFound/notFound.js"></script>
+
+    
+
   </body>
 </html>

@@ -1,6 +1,5 @@
 (function() {
-	angular.module('myApp.directive',[
+	angular.module('myApp.features.appDirective',[
 		'ngComponentRouter',
-		'myApp.home'
 	]);
 })();

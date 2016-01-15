@@ -2,18 +2,20 @@
 	'use strict';
 
 	angular
-		.module('myApp.appDirective')
-		.directive('appDirective', appDirective);
+		.module('myApp.features.appDirective')
+		.directive('app', App);
 
-		function AppDirective() {
+		function App() {
 			return {
 				restrict: 'E',
-				templateUrl: 'appDirective/appDirective.html',
-				controller: ['$router', AppDirectiveController]
+				templateUrl: 'app/features/appDirective/appDirective.html',
+				controller: AppController,
+				controllerAs: 'vm',
+				bindToController: true
 			};
 		}
 
-		function AppDirectiveController($router) {
+		function AppController($router) {
 			console.log('configuring routers');
 
 			$router.config([
@@ -21,6 +23,11 @@
 					path: '/',
 					component: 'home',
 					name: 'Home'
+				},
+				{
+					path: '/**',
+					component: 'notFound',
+					name: 'NotFound'
 				}
 			]);
 		}
