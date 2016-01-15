@@ -3,6 +3,7 @@
 
 	angular.module('myApp.features',[
 		'myApp.features.appDirective'
+		
 
 	]);
 })();

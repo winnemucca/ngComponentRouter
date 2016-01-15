@@ -3,6 +3,7 @@
 
 	angular.module('myApp',[
 		'ngComponentRouter',
-		'myApp.features'
+		'myApp.features',
+		'myApp.components'
 	]);
 })();

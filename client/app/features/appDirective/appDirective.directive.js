@@ -28,7 +28,13 @@
 					path: '/**',
 					component: 'notFound',
 					name: 'NotFound'
+				},
+				{
+					path: '/about',
+					component: 'about',
+					name: 'About'
 				}
+
 			]);
 		}
 })();

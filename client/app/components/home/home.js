@@ -1,14 +1,14 @@
 
-angular.module('myApp.home', [])
+angular.module('myApp.components.home', [])
 	.directive('home',Home);
 
 	function Home() {
 		return {
-			restrict: 'E',
+			restrict: 'EA',
 			scope: {
 				title: '@'
 			},
-			templateUrl: 'components/home/home.html',
+			templateUrl: 'app/components/home/home.html',
 			controller: HomeController,
 			controllerAs: 'vm',
 			bindToController: true
@@ -17,6 +17,7 @@ angular.module('myApp.home', [])
 
 
 function HomeController() {
+	console.log('home Controller')
 	var vm = this;
 }
 
